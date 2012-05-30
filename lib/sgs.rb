@@ -1,3 +1,5 @@
+require "uri"
+require "time"
 require "rest-client"
 require "nokogiri"
 require "sgs/version"

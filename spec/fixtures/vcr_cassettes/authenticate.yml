@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://marknad.sgsstudentbostader.se/s3.aspx?client=<username>&id=/se/mina-sidor&mg=1&page=pgRedirect&pin=<password>&url=http://www.sgsstudentbostader.se/setlogin.aspx&verifylogin=y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Wed, 30 May 2012 23:34:28 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Location:
+      - http://www.sgsstudentbostader.se/setlogin.aspx?id=/se/mina-sidor&blnInloggadFull=true&blnInloggadLight=true&kundid=<username>&kundnamn=Linus+Oleander&borhossgs=True&tvattstuga=True&ansokningsdatum=2008-12-15&customer_name=401320034&kundstatus=+%7b+%22SyndicateObjectMainGroupDescription%22%3a+%22Studentl%c3%a4genheter%22%2c+%22ClientDate%22%3a+%222008-12-15%22%2c+%22ClientPoints%22%3a+0%2c+%22ShowClientDate%22%3a++true%2c+%22ShowClientPoints%22%3a+false%2c+%22BlockCodeNo%22%3a+0%2c+%22BlockCode%22%3a+%22NONE%22%2c+%22BlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22BlockCodeValidTo%22%3a+%22%22%2c%22CompanyBlockCodeNo%22%3a+0%2c+%22CompanyBlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22CompanyBlockValidTo%22%3a+%22%22+%7d
+      Set-Cookie:
+      - ASP.NET_SessionId=nt3dc1uabsguhj55ri4ldn55; path=/; HttpOnly
+      - Language=se; expires=Fri, 30-Nov-2012 00:34:28 GMT; path=/
+      - maingroup=1; expires=Mon, 30-Jul-2012 23:34:28 GMT; path=/
+      Cache-Control:
+      - private
+      Expires:
+      - Wed, 30 May 2012 23:33:28 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '886'
+    body:
+      encoding: US-ASCII
+      string: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+        moved to <a href=\"http://www.sgsstudentbostader.se/setlogin.aspx?id=/se/mina-sidor&amp;blnInloggadFull=true&amp;blnInloggadLight=true&amp;kundid=<username>&amp;kundnamn=Linus+Oleander&amp;borhossgs=True&amp;tvattstuga=True&amp;ansokningsdatum=2008-12-15&amp;customer_name=401320034&amp;kundstatus=+%7b+%22SyndicateObjectMainGroupDescription%22%3a+%22Studentl%c3%a4genheter%22%2c+%22ClientDate%22%3a+%222008-12-15%22%2c+%22ClientPoints%22%3a+0%2c+%22ShowClientDate%22%3a++true%2c+%22ShowClientPoints%22%3a+false%2c+%22BlockCodeNo%22%3a+0%2c+%22BlockCode%22%3a+%22NONE%22%2c+%22BlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22BlockCodeValidTo%22%3a+%22%22%2c%22CompanyBlockCodeNo%22%3a+0%2c+%22CompanyBlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22CompanyBlockValidTo%22%3a+%22%22+%7d\">here</a>.</h2>\r\n</body></html>\r\n"
+    http_version: !!null 
+  recorded_at: Wed, 30 May 2012 23:34:22 GMT
+- request:
+    method: get
+    uri: http://www.sgsstudentbostader.se/setlogin.aspx?ansokningsdatum=2008-12-15&blnInloggadFull=true&blnInloggadLight=true&borhossgs=True&customer_name=401320034&id=/se/mina-sidor&kundid=<username>&kundnamn=Linus%20Oleander&kundstatus=%20%7B%20%22SyndicateObjectMainGroupDescription%22:%20%22Studentl%C3%A4genheter%22,%20%22ClientDate%22:%20%222008-12-15%22,%20%22ClientPoints%22:%200,%20%22ShowClientDate%22:%20%20true,%20%22ShowClientPoints%22:%20false,%20%22BlockCodeNo%22:%200,%20%22BlockCode%22:%20%22NONE%22,%20%22BlockCodeDescription%22:%20%22Godk%C3%A4nd%22,%20%22BlockCodeValidTo%22:%20%22%22,%22CompanyBlockCodeNo%22:%200,%20%22CompanyBlockCodeDescription%22:%20%22Godk%C3%A4nd%22,%20%22CompanyBlockValidTo%22:%20%22%22%20%7D&tvattstuga=True
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Wed, 30 May 2012 23:34:28 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Location:
+      - /se/mina-sidor
+      Set-Cookie:
+      - ASP.NET_SessionId=2dde3055u1tlvlaza4lcbh45; path=/; HttpOnly
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '135'
+    body:
+      encoding: US-ASCII
+      string: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+        moved to <a href=\"%2fse%2fmina-sidor\">here</a>.</h2>\r\n</body></html>\r\n"
+    http_version: !!null 
+  recorded_at: Wed, 30 May 2012 23:34:23 GMT
+recorded_with: VCR 2.1.1
