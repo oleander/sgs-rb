@@ -1,0 +1,5 @@
+require "rest-client"
+require "nokogiri"
+require "sgs/version"
+require "sgs/authenticate"
+require "sgs/wash"
