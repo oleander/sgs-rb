@@ -1,6 +1,6 @@
 # SGS
 
-Ruby wrapper for sgsstudentbostader.se
+Ruby wrapper for [sgsstudentbostader.se](http://www.sgsstudentbostader.se).
 
 ## Installation
 
