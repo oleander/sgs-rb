@@ -1,12 +1,12 @@
 module SGS
   class Wash
     #
-    # @args[:date] Date
+    # @args[:week] Fixnum Optional
     # @args[:username] String
     # @args[:password] Password 
     #
     def initialize(args)
-      @date = args.fetch(:date)
+      @week = args[:week] || Date.today.cweek
 
       @cookies = SGS::Authenticate.new({
         username: args.fetch(:username),
@@ -25,7 +25,7 @@ module SGS
           http://tvatta.sgsstudentbostader.se/wwwashbookings.aspx?
           panelId=616&
           weekoffset=0&
-          date=#{URI.escape @date.strftime("%Y-%m-%d %H:%M:%S")}
+          date=#{URI.escape week_dates(@week).strftime("%Y-%m-%d %H:%M:%S")}
         }.join("")
 
         RestClient.get("http://www.sgsstudentbostader.se/ext_gw.aspx?module=wwwash&lang=se", cookies: @cookies) do |r|
@@ -51,6 +51,10 @@ module SGS
 
         @booking.new(group, start_time, end_time, where)
       end
+    end
+
+    def week_dates(week_num)
+      Date.commercial(Time.now.year, week_num, 1)
     end
   end
 end

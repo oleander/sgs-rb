@@ -1,0 +1,551 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://marknad.sgsstudentbostader.se/s3.aspx?client=<username>&id=/se/mina-sidor&mg=1&page=pgRedirect&pin=<password>&url=http://www.sgsstudentbostader.se/setlogin.aspx&verifylogin=y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Thu, 31 May 2012 22:58:31 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Location:
+      - http://www.sgsstudentbostader.se/setlogin.aspx?id=/se/mina-sidor&blnInloggadFull=true&blnInloggadLight=true&kundid=<username>&kundnamn=Linus+Oleander&borhossgs=True&tvattstuga=True&ansokningsdatum=2008-12-15&customer_name=401320034&kundstatus=+%7b+%22SyndicateObjectMainGroupDescription%22%3a+%22Studentl%c3%a4genheter%22%2c+%22ClientDate%22%3a+%222008-12-15%22%2c+%22ClientPoints%22%3a+0%2c+%22ShowClientDate%22%3a++true%2c+%22ShowClientPoints%22%3a+false%2c+%22BlockCodeNo%22%3a+0%2c+%22BlockCode%22%3a+%22NONE%22%2c+%22BlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22BlockCodeValidTo%22%3a+%22%22%2c%22CompanyBlockCodeNo%22%3a+0%2c+%22CompanyBlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22CompanyBlockValidTo%22%3a+%22%22+%7d
+      Set-Cookie:
+      - ASP.NET_SessionId=xnkvyqz2nssivw55vfnwqp55; path=/; HttpOnly
+      - Language=se; expires=Fri, 30-Nov-2012 23:58:31 GMT; path=/
+      - maingroup=1; expires=Tue, 31-Jul-2012 22:58:31 GMT; path=/
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 31 May 2012 22:57:31 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '886'
+    body:
+      encoding: US-ASCII
+      string: !str
+        str: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+          moved to <a href=\"http://www.sgsstudentbostader.se/setlogin.aspx?id=/se/mina-sidor&amp;blnInloggadFull=true&amp;blnInloggadLight=true&amp;kundid=<username>&amp;kundnamn=Linus+Oleander&amp;borhossgs=True&amp;tvattstuga=True&amp;ansokningsdatum=2008-12-15&amp;customer_name=401320034&amp;kundstatus=+%7b+%22SyndicateObjectMainGroupDescription%22%3a+%22Studentl%c3%a4genheter%22%2c+%22ClientDate%22%3a+%222008-12-15%22%2c+%22ClientPoints%22%3a+0%2c+%22ShowClientDate%22%3a++true%2c+%22ShowClientPoints%22%3a+false%2c+%22BlockCodeNo%22%3a+0%2c+%22BlockCode%22%3a+%22NONE%22%2c+%22BlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22BlockCodeValidTo%22%3a+%22%22%2c%22CompanyBlockCodeNo%22%3a+0%2c+%22CompanyBlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22CompanyBlockValidTo%22%3a+%22%22+%7d\">here</a>.</h2>\r\n</body></html>\r\n"
+        net_http_res: &70208837485440 !ruby/object:Net::HTTPFound
+          http_version: '1.0'
+          code: '302'
+          message: Found
+          header:
+            date:
+            - Thu, 31 May 2012 22:58:31 GMT
+            server:
+            - Microsoft-IIS/6.0
+            x-powered-by:
+            - ASP.NET
+            x-aspnet-version:
+            - 2.0.50727
+            location:
+            - http://www.sgsstudentbostader.se/setlogin.aspx?id=/se/mina-sidor&blnInloggadFull=true&blnInloggadLight=true&kundid=<username>&kundnamn=Linus+Oleander&borhossgs=True&tvattstuga=True&ansokningsdatum=2008-12-15&customer_name=401320034&kundstatus=+%7b+%22SyndicateObjectMainGroupDescription%22%3a+%22Studentl%c3%a4genheter%22%2c+%22ClientDate%22%3a+%222008-12-15%22%2c+%22ClientPoints%22%3a+0%2c+%22ShowClientDate%22%3a++true%2c+%22ShowClientPoints%22%3a+false%2c+%22BlockCodeNo%22%3a+0%2c+%22BlockCode%22%3a+%22NONE%22%2c+%22BlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22BlockCodeValidTo%22%3a+%22%22%2c%22CompanyBlockCodeNo%22%3a+0%2c+%22CompanyBlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22CompanyBlockValidTo%22%3a+%22%22+%7d
+            set-cookie: &70208837484040
+            - ASP.NET_SessionId=xnkvyqz2nssivw55vfnwqp55; path=/; HttpOnly
+            - Language=se; expires=Fri, 30-Nov-2012 23:58:31 GMT; path=/
+            - maingroup=1; expires=Tue, 31-Jul-2012 22:58:31 GMT; path=/
+            cache-control:
+            - private
+            expires:
+            - Thu, 31 May 2012 22:57:31 GMT
+            content-type:
+            - text/html; charset=utf-8
+            content-length:
+            - '886'
+          body: !str
+            str: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+              moved to <a href=\"http://www.sgsstudentbostader.se/setlogin.aspx?id=/se/mina-sidor&amp;blnInloggadFull=true&amp;blnInloggadLight=true&amp;kundid=<username>&amp;kundnamn=Linus+Oleander&amp;borhossgs=True&amp;tvattstuga=True&amp;ansokningsdatum=2008-12-15&amp;customer_name=401320034&amp;kundstatus=+%7b+%22SyndicateObjectMainGroupDescription%22%3a+%22Studentl%c3%a4genheter%22%2c+%22ClientDate%22%3a+%222008-12-15%22%2c+%22ClientPoints%22%3a+0%2c+%22ShowClientDate%22%3a++true%2c+%22ShowClientPoints%22%3a+false%2c+%22BlockCodeNo%22%3a+0%2c+%22BlockCode%22%3a+%22NONE%22%2c+%22BlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22BlockCodeValidTo%22%3a+%22%22%2c%22CompanyBlockCodeNo%22%3a+0%2c+%22CompanyBlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22CompanyBlockValidTo%22%3a+%22%22+%7d\">here</a>.</h2>\r\n</body></html>\r\n"
+            net_http_res: *70208837485440
+            args: &70208838067700
+              :method: :get
+              :url: http://marknad.sgsstudentbostader.se/s3.aspx?page=pgRedirect&verifylogin=y&mg=1&id=/se/mina-sidor&client=200910&pin=6223&url=http://www.sgsstudentbostader.se/setlogin.aspx
+              :headers: {}
+            headers: &70208837482820
+              :date: Thu, 31 May 2012 22:58:31 GMT
+              :server: Microsoft-IIS/6.0
+              :x_powered_by: ASP.NET
+              :x_aspnet_version: 2.0.50727
+              :location: http://www.sgsstudentbostader.se/setlogin.aspx?id=/se/mina-sidor&blnInloggadFull=true&blnInloggadLight=true&kundid=<username>&kundnamn=Linus+Oleander&borhossgs=True&tvattstuga=True&ansokningsdatum=2008-12-15&customer_name=401320034&kundstatus=+%7b+%22SyndicateObjectMainGroupDescription%22%3a+%22Studentl%c3%a4genheter%22%2c+%22ClientDate%22%3a+%222008-12-15%22%2c+%22ClientPoints%22%3a+0%2c+%22ShowClientDate%22%3a++true%2c+%22ShowClientPoints%22%3a+false%2c+%22BlockCodeNo%22%3a+0%2c+%22BlockCode%22%3a+%22NONE%22%2c+%22BlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22BlockCodeValidTo%22%3a+%22%22%2c%22CompanyBlockCodeNo%22%3a+0%2c+%22CompanyBlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22CompanyBlockValidTo%22%3a+%22%22+%7d
+              :set_cookie: *70208837484040
+              :cache_control: private
+              :expires: Thu, 31 May 2012 22:57:31 GMT
+              :content_type: text/html; charset=utf-8
+              :content_length: '886'
+          read: true
+          __read_body_previously_called: true
+        args: *70208838067700
+        headers: *70208837482820
+    http_version: !!null 
+  recorded_at: Thu, 31 May 2012 22:58:24 GMT
+- request:
+    method: get
+    uri: http://www.sgsstudentbostader.se/setlogin.aspx?ansokningsdatum=2008-12-15&blnInloggadFull=true&blnInloggadLight=true&borhossgs=True&customer_name=401320034&id=/se/mina-sidor&kundid=<username>&kundnamn=Linus%20Oleander&kundstatus=%20%7B%20%22SyndicateObjectMainGroupDescription%22:%20%22Studentl%C3%A4genheter%22,%20%22ClientDate%22:%20%222008-12-15%22,%20%22ClientPoints%22:%200,%20%22ShowClientDate%22:%20%20true,%20%22ShowClientPoints%22:%20false,%20%22BlockCodeNo%22:%200,%20%22BlockCode%22:%20%22NONE%22,%20%22BlockCodeDescription%22:%20%22Godk%C3%A4nd%22,%20%22BlockCodeValidTo%22:%20%22%22,%22CompanyBlockCodeNo%22:%200,%20%22CompanyBlockCodeDescription%22:%20%22Godk%C3%A4nd%22,%20%22CompanyBlockValidTo%22:%20%22%22%20%7D&tvattstuga=True
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Thu, 31 May 2012 22:58:31 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Location:
+      - /se/mina-sidor
+      Set-Cookie:
+      - ASP.NET_SessionId=2prowpbqeqube3fhvfojcc55; path=/; HttpOnly
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '135'
+    body:
+      encoding: US-ASCII
+      string: !str
+        str: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+          moved to <a href=\"%2fse%2fmina-sidor\">here</a>.</h2>\r\n</body></html>\r\n"
+        net_http_res: &70208836315260 !ruby/object:Net::HTTPFound
+          http_version: '1.0'
+          code: '302'
+          message: Found
+          header:
+            date:
+            - Thu, 31 May 2012 22:58:31 GMT
+            server:
+            - Microsoft-IIS/6.0
+            x-powered-by:
+            - ASP.NET
+            x-aspnet-version:
+            - 2.0.50727
+            location:
+            - /se/mina-sidor
+            set-cookie: &70208836287080
+            - ASP.NET_SessionId=2prowpbqeqube3fhvfojcc55; path=/; HttpOnly
+            cache-control:
+            - private
+            content-type:
+            - text/html; charset=utf-8
+            content-length:
+            - '135'
+          body: !str
+            str: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+              moved to <a href=\"%2fse%2fmina-sidor\">here</a>.</h2>\r\n</body></html>\r\n"
+            net_http_res: *70208836315260
+            args: &70208837462520
+              :method: :get
+              :url: http://www.sgsstudentbostader.se/setlogin.aspx?id=/se/mina-sidor&blnInloggadFull=true&blnInloggadLight=true&kundid=<username>&kundnamn=Linus+Oleander&borhossgs=True&tvattstuga=True&ansokningsdatum=2008-12-15&customer_name=401320034&kundstatus=+%7b+%22SyndicateObjectMainGroupDescription%22%3a+%22Studentl%c3%a4genheter%22%2c+%22ClientDate%22%3a+%222008-12-15%22%2c+%22ClientPoints%22%3a+0%2c+%22ShowClientDate%22%3a++true%2c+%22ShowClientPoints%22%3a+false%2c+%22BlockCodeNo%22%3a+0%2c+%22BlockCode%22%3a+%22NONE%22%2c+%22BlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22BlockCodeValidTo%22%3a+%22%22%2c%22CompanyBlockCodeNo%22%3a+0%2c+%22CompanyBlockCodeDescription%22%3a+%22Godk%c3%a4nd%22%2c+%22CompanyBlockValidTo%22%3a+%22%22+%7d
+              :headers: {}
+            headers: &70208836286100
+              :date: Thu, 31 May 2012 22:58:31 GMT
+              :server: Microsoft-IIS/6.0
+              :x_powered_by: ASP.NET
+              :x_aspnet_version: 2.0.50727
+              :location: /se/mina-sidor
+              :set_cookie: *70208836287080
+              :cache_control: private
+              :content_type: text/html; charset=utf-8
+              :content_length: '135'
+            cookies: &70208836280360
+              ASP.NET_SessionId: 2prowpbqeqube3fhvfojcc55
+          read: true
+          __read_body_previously_called: true
+        args: *70208837462520
+        headers: *70208836286100
+        cookies: *70208836280360
+    http_version: !!null 
+  recorded_at: Thu, 31 May 2012 22:58:24 GMT
+- request:
+    method: get
+    uri: http://www.sgsstudentbostader.se/ext_gw.aspx?lang=se&module=wwwash
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Cookie:
+      - ASP.NET_SessionId=2prowpbqeqube3fhvfojcc55
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Thu, 31 May 2012 22:58:31 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Location:
+      - http://tvatta.sgsstudentbostader.se/int_gw.aspx?module=wwwash&CustomerIdentity=401320034&SecurityCode=d199l7vukhcn6q2ycwymwdql
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '251'
+    body:
+      encoding: US-ASCII
+      string: !str
+        str: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+          moved to <a href=\"http://tvatta.sgsstudentbostader.se/int_gw.aspx?module=wwwash&amp;CustomerIdentity=401320034&amp;SecurityCode=d199l7vukhcn6q2ycwymwdql\">here</a>.</h2>\r\n</body></html>\r\n"
+        net_http_res: &70208835916020 !ruby/object:Net::HTTPFound
+          http_version: '1.0'
+          code: '302'
+          message: Found
+          header:
+            date:
+            - Thu, 31 May 2012 22:58:31 GMT
+            server:
+            - Microsoft-IIS/6.0
+            x-powered-by:
+            - ASP.NET
+            x-aspnet-version:
+            - 2.0.50727
+            location:
+            - http://tvatta.sgsstudentbostader.se/int_gw.aspx?module=wwwash&CustomerIdentity=401320034&SecurityCode=d199l7vukhcn6q2ycwymwdql
+            cache-control:
+            - private
+            content-type:
+            - text/html; charset=utf-8
+            content-length:
+            - '251'
+          body: !str
+            str: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+              moved to <a href=\"http://tvatta.sgsstudentbostader.se/int_gw.aspx?module=wwwash&amp;CustomerIdentity=401320034&amp;SecurityCode=d199l7vukhcn6q2ycwymwdql\">here</a>.</h2>\r\n</body></html>\r\n"
+            net_http_res: *70208835916020
+            args: &70208836211160
+              :method: :get
+              :url: http://www.sgsstudentbostader.se/ext_gw.aspx?module=wwwash&lang=se
+              :headers:
+                :cookie: ASP.NET_SessionId=2prowpbqeqube3fhvfojcc55
+            headers: &70208835907140
+              :date: Thu, 31 May 2012 22:58:31 GMT
+              :server: Microsoft-IIS/6.0
+              :x_powered_by: ASP.NET
+              :x_aspnet_version: 2.0.50727
+              :location: http://tvatta.sgsstudentbostader.se/int_gw.aspx?module=wwwash&CustomerIdentity=401320034&SecurityCode=d199l7vukhcn6q2ycwymwdql
+              :cache_control: private
+              :content_type: text/html; charset=utf-8
+              :content_length: '251'
+          read: true
+          __read_body_previously_called: true
+        args: *70208836211160
+        headers: *70208835907140
+    http_version: !!null 
+  recorded_at: Thu, 31 May 2012 22:58:24 GMT
+- request:
+    method: get
+    uri: http://tvatta.sgsstudentbostader.se/int_gw.aspx?CustomerIdentity=401320034&SecurityCode=d199l7vukhcn6q2ycwymwdql&module=wwwash
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Cookie:
+      - ASP.NET_SessionId=2prowpbqeqube3fhvfojcc55
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Thu, 31 May 2012 22:58:31 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Location:
+      - /wwwash.aspx
+      Set-Cookie:
+      - .ASPXAUTH=1F71F06A8F5250A5AC4D9FD5289C3A492499DBE9D7DB9E955BFC7046DD9D446BD1DACC83D1FE79E545BA5CC964EB8A78D6745CB91E7F98B0CE36F3F8CCEFA56A1F53002E256314CB78E27E99275ACA1C93E5326C7E71E54E2290389C023505619EE849821CCD18F4B2C6D2FE89DE8D053D8443CF;
+        path=/; HttpOnly
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - '-1'
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '131'
+    body:
+      encoding: US-ASCII
+      string: !str
+        str: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+          moved to <a href=\"%2fwwwash.aspx\">here</a>.</h2>\r\n</body></html>\r\n"
+        net_http_res: &70208835618520 !ruby/object:Net::HTTPFound
+          http_version: '1.0'
+          code: '302'
+          message: Found
+          header:
+            date:
+            - Thu, 31 May 2012 22:58:31 GMT
+            server:
+            - Microsoft-IIS/6.0
+            x-powered-by:
+            - ASP.NET
+            x-aspnet-version:
+            - 2.0.50727
+            location:
+            - /wwwash.aspx
+            set-cookie: &70208835616140
+            - .ASPXAUTH=1F71F06A8F5250A5AC4D9FD5289C3A492499DBE9D7DB9E955BFC7046DD9D446BD1DACC83D1FE79E545BA5CC964EB8A78D6745CB91E7F98B0CE36F3F8CCEFA56A1F53002E256314CB78E27E99275ACA1C93E5326C7E71E54E2290389C023505619EE849821CCD18F4B2C6D2FE89DE8D053D8443CF;
+              path=/; HttpOnly
+            cache-control:
+            - no-cache
+            pragma:
+            - no-cache
+            expires:
+            - '-1'
+            content-type:
+            - text/html; charset=utf-8
+            content-length:
+            - '131'
+          body: !str
+            str: ! "<html><head><title>Object moved</title></head><body>\r\n<h2>Object
+              moved to <a href=\"%2fwwwash.aspx\">here</a>.</h2>\r\n</body></html>\r\n"
+            net_http_res: *70208835618520
+            args: &70208835899980
+              :method: :get
+              :url: http://tvatta.sgsstudentbostader.se/int_gw.aspx?module=wwwash&CustomerIdentity=401320034&SecurityCode=d199l7vukhcn6q2ycwymwdql
+              :headers:
+                :cookie: ASP.NET_SessionId=2prowpbqeqube3fhvfojcc55
+            headers: &70208835613700
+              :date: Thu, 31 May 2012 22:58:31 GMT
+              :server: Microsoft-IIS/6.0
+              :x_powered_by: ASP.NET
+              :x_aspnet_version: 2.0.50727
+              :location: /wwwash.aspx
+              :set_cookie: *70208835616140
+              :cache_control: no-cache
+              :pragma: no-cache
+              :expires: '-1'
+              :content_type: text/html; charset=utf-8
+              :content_length: '131'
+            cookies: &70208835583840
+              .ASPXAUTH: 1F71F06A8F5250A5AC4D9FD5289C3A492499DBE9D7DB9E955BFC7046DD9D446BD1DACC83D1FE79E545BA5CC964EB8A78D6745CB91E7F98B0CE36F3F8CCEFA56A1F53002E256314CB78E27E99275ACA1C93E5326C7E71E54E2290389C023505619EE849821CCD18F4B2C6D2FE89DE8D053D8443CF
+          read: true
+          __read_body_previously_called: true
+        args: *70208835899980
+        headers: *70208835613700
+        cookies: *70208835583840
+    http_version: !!null 
+  recorded_at: Thu, 31 May 2012 22:58:24 GMT
+- request:
+    method: get
+    uri: http://tvatta.sgsstudentbostader.se/wwwashbookings.aspx?date=2012-05-28%2000:00:00&panelId=616&weekoffset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Cookie:
+      - .ASPXAUTH=1F71F06A8F5250A5AC4D9FD5289C3A492499DBE9D7DB9E955BFC7046DD9D446BD1DACC83D1FE79E545BA5CC964EB8A78D6745CB91E7F98B0CE36F3F8CCEFA56A1F53002E256314CB78E27E99275ACA1C93E5326C7E71E54E2290389C023505619EE849821CCD18F4B2C6D2FE89DE8D053D8443CF;
+        ASP.NET_SessionId=2prowpbqeqube3fhvfojcc55
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 31 May 2012 22:58:31 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - '-1'
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '4201'
+    body:
+      encoding: ASCII-8BIT
+      string: ! "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\"
+        >\r\n<html>\r\n<head>\r\n\t<title>wwwashbookings</title>\r\n\r\n\t<script
+        type=\"text/javascript\" id=\"clientEventHandlersJS\" language=\"javascript\"
+        src=\"script/wwwash.js\"></script>\r\n\r\n\t<link id=\"css\" href=\"css/Styles.css\"
+        type=\"text/css\" rel=\"stylesheet\" />\r\n</head>\r\n<body onmousedown=\"resetTimeOut();\">\r\n\t<table
+        height=\"100%\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n\t\t<tr>\r\n\t\t\t<td
+        valign=\"middle\" align=\"center\">\r\n\t\t\t\t<table style=\"border-right:
+        black 1px solid; border-top: black 1px solid; border-left: black 1px solid;
+        border-bottom: black 1px solid\" cellspacing=\"0\" cellpadding=\"7\" width=\"400\">\r\n\t\t\t\t\t<tr
+        class=\"bgActiveColor\">\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t<table style=\"border-right:
+        #ffffff 1px solid; border-top: #666666 1px solid; border-left: #666666 1px
+        solid; border-bottom: #ffffff 1px solid; background-color: #ffffff\" cellspacing=\"5\"
+        cellpadding=\"0\" width=\"100%\">\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td
+        class=\"bigText headerColor\">\r\n\t\t\t\t\t\t\t\t\t\t<b>\r\n\t\t\t\t\t\t\t\t\t\t\t<span
+        id=\"lblHeader\">Bokade pass</span>\r\n\t\t\t\t\t\t\t\t\t\t</b><br /><br />\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t<span
+        id=\"lblHelpText\" class=\"smallText periodLinkColor\"><b>Klicka på önskat
+        pass för att avboka</b></span>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t<table
+        cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n\t\t\t\t\t\t\t\t\t\t\t<tr><td
+        rowspan=\"2\" width=\"1\" style=\"padding-left:5px; padding-top:0;\"><img
+        align=\"top\" src=\"Images/pil2_right.gif\" style=\"padding-top:0\"></td><td
+        class=\"smallText headerColor\" style=\"cursor:pointer; cursor:hand;padding-top:5px;\"
+        onmousedown=\"javascript:location.href='wwwashwait.aspx?command=cancel&PanelId=616&TypeId=5179&GroupId=5432&Date=2012-06-26&IntervalId=2&NextPage=wwwashbookings'\"><b>Tvätt
+        307</b></td><td align=\"right\" class=\"smallText headerColor\">2012-06-26</td></tr><tr><td
+        class=\"smallText headerColor\" style=\"width:70%; cursor:pointer; cursor:hand;vertical-align:top;
+        padding-bottom:5px\" onmousedown=\"javascript:location.href='wwwashwait.aspx?command=cancel&PanelId=616&TypeId=5179&GroupId=5432&Date=2012-06-26&IntervalId=2&NextPage=wwwashbookings'\"><b>Grupp:
+        1</b></td><td align=\"right\" class=\"smallText headerColor\">10:00-11:30</td></tr><tr><td
+        colspan=\"3\"><img src=\"Images/yellow_dot.gif\" width=\"100%\" height=\"1\"></td></tr><tr><td
+        rowspan=\"2\" width=\"1\" style=\"padding-left:5px; padding-top:0;\"><img
+        align=\"top\" src=\"Images/pil2_right.gif\" style=\"padding-top:0\"></td><td
+        class=\"smallText headerColor\" style=\"cursor:pointer; cursor:hand;padding-top:5px;\"
+        onmousedown=\"javascript:location.href='wwwashwait.aspx?command=cancel&PanelId=616&TypeId=5179&GroupId=5432&Date=2012-06-05&IntervalId=2&NextPage=wwwashbookings'\"><b>Tvätt
+        307</b></td><td align=\"right\" class=\"smallText headerColor\">2012-06-05</td></tr><tr><td
+        class=\"smallText headerColor\" style=\"width:70%; cursor:pointer; cursor:hand;vertical-align:top;
+        padding-bottom:5px\" onmousedown=\"javascript:location.href='wwwashwait.aspx?command=cancel&PanelId=616&TypeId=5179&GroupId=5432&Date=2012-06-05&IntervalId=2&NextPage=wwwashbookings'\"><b>Grupp:
+        1</b></td><td align=\"right\" class=\"smallText headerColor\">10:00-11:30</td></tr><tr><td
+        colspan=\"3\"><img src=\"Images/yellow_dot.gif\" width=\"100%\" height=\"1\"></td></tr>\r\n\t\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t<table
+        cellspacing=\"5\" cellpadding=\"5\" border=\"0\" width=\"100%\">\r\n\t<tr>\r\n\t\t<td
+        class=\"bgInactiveColor textInactiveColor buttonStyleHelp\" align=\"center\"
+        onmousedown=\"javascript:location.href='wwwashcalendar.aspx?panelId=616&amp;weekoffset=0&amp;type=&amp;group='\"><b>Tillbaka</b></td><td></td><td
+        class=\"bgInactiveColor textInactiveColor buttonStyleHelp\" onmousedown=\"javascript:location.href='wwwashbookings.aspx?panelId=616&amp;weekoffset=0&amp;type=&amp;group=&amp;history=true'\"><b>Historik</b></td><td></td><td
+        class=\"bgInactiveColor textInactiveColor buttonStyleHelp\" onmousedown=\"javascript:OpenTheHelpWindow('Help/helpCustomerBookings.aspx');\"><b>Hjälp</b></td>\r\n\t</tr>\r\n</table>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</table>\r\n</body>\r\n</html>\r\n"
+    http_version: !!null 
+  recorded_at: Thu, 31 May 2012 22:58:25 GMT
+- request:
+    method: get
+    uri: http://tvatta.sgsstudentbostader.se/wwwashbookings.aspx?date=2012-06-04%2000:00:00&panelId=616&weekoffset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Cookie:
+      - .ASPXAUTH=1F71F06A8F5250A5AC4D9FD5289C3A492499DBE9D7DB9E955BFC7046DD9D446BD1DACC83D1FE79E545BA5CC964EB8A78D6745CB91E7F98B0CE36F3F8CCEFA56A1F53002E256314CB78E27E99275ACA1C93E5326C7E71E54E2290389C023505619EE849821CCD18F4B2C6D2FE89DE8D053D8443CF;
+        ASP.NET_SessionId=2prowpbqeqube3fhvfojcc55
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 31 May 2012 22:58:31 GMT
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      X-Aspnet-Version:
+      - 2.0.50727
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - '-1'
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '4201'
+    body:
+      encoding: ASCII-8BIT
+      string: ! "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\"
+        >\r\n<html>\r\n<head>\r\n\t<title>wwwashbookings</title>\r\n\r\n\t<script
+        type=\"text/javascript\" id=\"clientEventHandlersJS\" language=\"javascript\"
+        src=\"script/wwwash.js\"></script>\r\n\r\n\t<link id=\"css\" href=\"css/Styles.css\"
+        type=\"text/css\" rel=\"stylesheet\" />\r\n</head>\r\n<body onmousedown=\"resetTimeOut();\">\r\n\t<table
+        height=\"100%\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n\t\t<tr>\r\n\t\t\t<td
+        valign=\"middle\" align=\"center\">\r\n\t\t\t\t<table style=\"border-right:
+        black 1px solid; border-top: black 1px solid; border-left: black 1px solid;
+        border-bottom: black 1px solid\" cellspacing=\"0\" cellpadding=\"7\" width=\"400\">\r\n\t\t\t\t\t<tr
+        class=\"bgActiveColor\">\r\n\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t<table style=\"border-right:
+        #ffffff 1px solid; border-top: #666666 1px solid; border-left: #666666 1px
+        solid; border-bottom: #ffffff 1px solid; background-color: #ffffff\" cellspacing=\"5\"
+        cellpadding=\"0\" width=\"100%\">\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td
+        class=\"bigText headerColor\">\r\n\t\t\t\t\t\t\t\t\t\t<b>\r\n\t\t\t\t\t\t\t\t\t\t\t<span
+        id=\"lblHeader\">Bokade pass</span>\r\n\t\t\t\t\t\t\t\t\t\t</b><br /><br />\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t<span
+        id=\"lblHelpText\" class=\"smallText periodLinkColor\"><b>Klicka på önskat
+        pass för att avboka</b></span>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t<table
+        cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n\t\t\t\t\t\t\t\t\t\t\t<tr><td
+        rowspan=\"2\" width=\"1\" style=\"padding-left:5px; padding-top:0;\"><img
+        align=\"top\" src=\"Images/pil2_right.gif\" style=\"padding-top:0\"></td><td
+        class=\"smallText headerColor\" style=\"cursor:pointer; cursor:hand;padding-top:5px;\"
+        onmousedown=\"javascript:location.href='wwwashwait.aspx?command=cancel&PanelId=616&TypeId=5179&GroupId=5432&Date=2012-06-26&IntervalId=2&NextPage=wwwashbookings'\"><b>Tvätt
+        307</b></td><td align=\"right\" class=\"smallText headerColor\">2012-06-26</td></tr><tr><td
+        class=\"smallText headerColor\" style=\"width:70%; cursor:pointer; cursor:hand;vertical-align:top;
+        padding-bottom:5px\" onmousedown=\"javascript:location.href='wwwashwait.aspx?command=cancel&PanelId=616&TypeId=5179&GroupId=5432&Date=2012-06-26&IntervalId=2&NextPage=wwwashbookings'\"><b>Grupp:
+        1</b></td><td align=\"right\" class=\"smallText headerColor\">10:00-11:30</td></tr><tr><td
+        colspan=\"3\"><img src=\"Images/yellow_dot.gif\" width=\"100%\" height=\"1\"></td></tr><tr><td
+        rowspan=\"2\" width=\"1\" style=\"padding-left:5px; padding-top:0;\"><img
+        align=\"top\" src=\"Images/pil2_right.gif\" style=\"padding-top:0\"></td><td
+        class=\"smallText headerColor\" style=\"cursor:pointer; cursor:hand;padding-top:5px;\"
+        onmousedown=\"javascript:location.href='wwwashwait.aspx?command=cancel&PanelId=616&TypeId=5179&GroupId=5432&Date=2012-06-05&IntervalId=2&NextPage=wwwashbookings'\"><b>Tvätt
+        307</b></td><td align=\"right\" class=\"smallText headerColor\">2012-06-05</td></tr><tr><td
+        class=\"smallText headerColor\" style=\"width:70%; cursor:pointer; cursor:hand;vertical-align:top;
+        padding-bottom:5px\" onmousedown=\"javascript:location.href='wwwashwait.aspx?command=cancel&PanelId=616&TypeId=5179&GroupId=5432&Date=2012-06-05&IntervalId=2&NextPage=wwwashbookings'\"><b>Grupp:
+        1</b></td><td align=\"right\" class=\"smallText headerColor\">10:00-11:30</td></tr><tr><td
+        colspan=\"3\"><img src=\"Images/yellow_dot.gif\" width=\"100%\" height=\"1\"></td></tr>\r\n\t\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t<table
+        cellspacing=\"5\" cellpadding=\"5\" border=\"0\" width=\"100%\">\r\n\t<tr>\r\n\t\t<td
+        class=\"bgInactiveColor textInactiveColor buttonStyleHelp\" align=\"center\"
+        onmousedown=\"javascript:location.href='wwwashcalendar.aspx?panelId=616&amp;weekoffset=0&amp;type=&amp;group='\"><b>Tillbaka</b></td><td></td><td
+        class=\"bgInactiveColor textInactiveColor buttonStyleHelp\" onmousedown=\"javascript:location.href='wwwashbookings.aspx?panelId=616&amp;weekoffset=0&amp;type=&amp;group=&amp;history=true'\"><b>Historik</b></td><td></td><td
+        class=\"bgInactiveColor textInactiveColor buttonStyleHelp\" onmousedown=\"javascript:OpenTheHelpWindow('Help/helpCustomerBookings.aspx');\"><b>Hjälp</b></td>\r\n\t</tr>\r\n</table>\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</table>\r\n</body>\r\n</html>\r\n"
+    http_version: !!null 
+  recorded_at: Thu, 31 May 2012 22:58:25 GMT
+recorded_with: VCR 2.1.1
