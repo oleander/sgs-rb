@@ -10,4 +10,13 @@ describe SGS::Authenticate do
     cookies.keys.should include("ASP.NET_SessionId")
     cookies["ASP.NET_SessionId"].should match(/[a-z0-9]+/)
   end
+
+  it "should raise NotAuthenticateError if corrent params isn't used" do
+    lambda {
+      SGS::Authenticate.new({
+        username: "random",
+        password: "wrong"
+      }).cookies
+    }.should raise_error(SGS::NotAuthorisedError)
+  end
 end

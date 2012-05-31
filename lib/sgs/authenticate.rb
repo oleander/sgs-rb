@@ -25,6 +25,9 @@ module SGS
         }.join("")
 
         RestClient.get(url) do |r1|
+          if r1.headers[:location] =~ /blnInloggadFull=false/
+            raise NotAuthorisedError.new("Invalid username of password")
+          end
           RestClient.get(r1.headers[:location]) do |r2|
             return r2.cookies
           end
