@@ -1,24 +1,30 @@
-# Sgs
+# SGS
 
-TODO: Write a gem description
+Ruby wrapper for sgsstudentbostader.se
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'sgs'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sgs
+`[sudo] gem install sgs`
 
 ## Usage
 
-TODO: Write usage instructions here
+### Wash
+
+``` ruby
+booking = SGS::Wash.new({
+  username: "username",
+  password: "secret"
+}).bookings.first
+
+booking.group # => "2"
+```
+
+### Booking
+
+- **group** (String) What group was booked?
+- **start_time** (Time) When does it start?
+- **end_time** (Time) When does it end?
+- **where** (String) What studio was booked?
 
 ## Contributing
 
@@ -27,3 +33,11 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Requirements
+
+*SGS* is tested in *OS X 10.7.4* using Ruby *1.9.2*.
+
+## License
+
+*SGS* is released under the *MIT license*.
